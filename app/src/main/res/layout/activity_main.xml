@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matriculació"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/tv_materias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tria les matèries:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/cb_M08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M08" />
+
+    <CheckBox
+        android:id="@+id/cb_M09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M09" />
+
+    <CheckBox
+        android:id="@+id/cb_M06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M06" />
+
+    <TextView
+        android:id="@+id/tv_turno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tria el torn:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_turno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_matí"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matí" />
+
+        <RadioButton
+            android:id="@+id/rb_tarda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarda" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
